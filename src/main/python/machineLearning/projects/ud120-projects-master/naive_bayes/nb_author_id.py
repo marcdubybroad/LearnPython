@@ -26,7 +26,24 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 #########################################################
 ### your code goes here ###
+# import the sklear gaussian library
+from sklearn.naive_bayes import GaussianNB
 
+# create the classifier
+classifier = GaussianNB()
+
+# train the fit
+classifier.fit(features_train, labels_train)
+
+# classify
+prediction = classifier.predict(features_test)
+
+# get the accuracy
+from sklearn.metrics import accuracy_score
+acuracy = accuracy_score(prediction, labels_test)
+
+# print
+print "the author accuracy is: ", acuracy
 
 #########################################################
 
