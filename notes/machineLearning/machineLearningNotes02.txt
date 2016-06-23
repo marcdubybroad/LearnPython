@@ -1,0 +1,9 @@
+
+SVM
+- support vector machines
+  - maximzes distance between seperating line and nearest point for each cluster
+    - this distance is called the margin
+  - maximizing the margin makes the system more robust against noise in the data
+    - i=f line is too close, noise could make a point jump the line
+    - want to maximize robustness
+
